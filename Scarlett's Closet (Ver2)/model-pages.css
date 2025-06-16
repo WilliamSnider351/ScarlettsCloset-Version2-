@@ -1,0 +1,188 @@
+/* Reset and base font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.model-page {
+  background-color: black;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Top-left title */
+.hero-title {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.hero-title:hover {
+  color: #ff6347;
+}
+
+/* Vertical links under title */
+.model-nav {
+  position: absolute;
+  top: 146px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  text-align: left;
+  pointer-events: auto;
+}
+
+.model-nav a {
+  color: #ccc;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s ease;
+}
+
+.model-nav a:hover {
+  color: #ff6347;
+}
+
+/* Model name */
+.model-name {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+/* Product gallery grid */
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 96px 20px 20px;
+  z-index: 2;
+}
+
+.product-item {
+  max-width: 220px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-item img:hover {
+  transform: scale(1.05);
+}
+
+.product-caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Pagination controls */
+#pagination-controls {
+  margin-top: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+#pagination-controls button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 0 6px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+#pagination-controls button:hover {
+  background: #ff6347;
+  color: white;
+  border-color: #ff6347;
+}
+
+#pagination-controls .active {
+  background: #ff6347;
+  color: white;
+  border-color: #ff6347;
+}
+
+/* Page Content (About Us, Chat, etc.) */
+.page-content {
+  max-width: 700px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  text-align: left; /* ✅ FIX: left-align the paragraph text */
+  z-index: 2;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+  z-index: 2;
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 80%;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+    top: 15px;
+    left: 20px;
+  }
+
+  .model-nav {
+    top: 110px;
+    left: 20px;
+  }
+
+  .model-name {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  #pagination-controls button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}

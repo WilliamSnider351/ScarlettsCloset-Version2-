@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scarlett's Closet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Background Video */
+    .video-background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .video-background iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Title in Top-Left */
+    .hero-title {
+      position: absolute;
+      top: 50px; /* Moved down by ½ inch */
+      left: 30px;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      transition: color 0.3s ease;
+      z-index: 2;
+    }
+
+    }
+
+    .hero-title:hover {
+      color: #ff6347;
+    }
+
+    /* Model Links at Bottom */
+    .model-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px 10px;
+    }
+
+    .model-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .model-links a:hover {
+      color: #ff6347;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      padding: 10px 20px 30px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 1.1rem;
+        top: 15px;
+        left: 20px;
+      }
+
+      .model-links {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .model-links a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Background Video -->
+  <div class="video-background">
+    <iframe
+      src="https://www.youtube.com/embed/97hovEy-8FY?autoplay=1&loop=1&mute=1&playlist=97hovEy-8FY"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <!-- Title in Top-Left -->
+  <a href="index.html" class="hero-title">Scarlett’s Closet</a>
+
+  <!-- Model Links at Bottom -->
+  <div class="model-links">
+    <a href="models.html?model=anya_taylor_joy">Anya Taylor-Joy</a>
+    <a href="models.html?model=kristen_stewart">Kristen Stewart</a>
+    <a href="models.html?model=christy_turlington">Christy Turlington</a>
+    <a href="models.html?model=charlize_theron">Charlize Theron</a>
+    <a href="models.html?model=amber_valetta">Amber Valetta</a>
+    <a href="models.html?model=scarlett_johansson">Scarlett Johansson</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Faces you know, brands you trust.<br />
+    © 2025 Scarlett's Closet, Incorporated
+  </footer>
+</body>
+</html>

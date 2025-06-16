@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scarlett's Closet - Look Details</title>
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sale.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  
+</head>
+<body>
+
+  <a href="index.html" class="hero-title">SCARLETT’S CLOSET</a>
+
+  <a href="bag.html" class="shopping-bag-icon" aria-label="View Shopping Bag">
+    <img src="images/baggette.png" alt="Shopping Bag Icon" />
+    <span id="bag-count">0</span>
+  </a>
+  
+  <div class="sale-container">
+    <img id="look-image" src="images/anya_taylor_joy1.jpg" alt="Fashion look" />
+    <h2 class="sale-title" id="look-title">Giorgio Armani Shorts with Turtleneck Top</h2>
+    <p class="sale-description" id="look-description">Black full cut shorts with matching top.</p>
+    <p><strong>Price:</strong> $<span id="look-price">300.00</span></p>
+
+    <fieldset>
+      <legend style="font-weight:700; margin-bottom: 5px;">Size:</legend>
+      <div class="size-options">
+        <input type="radio" id="size-34" name="size" value="34" checked />
+        <label for="size-34">34</label>
+        <input type="radio" id="size-36" name="size" value="36" />
+        <label for="size-36">36</label>
+        <input type="radio" id="size-38" name="size" value="38" />
+        <label for="size-38">38</label>
+        <input type="radio" id="size-40" name="size" value="40" />
+        <label for="size-40">40</label>
+        <input type="radio" id="size-42" name="size" value="42" />
+        <label for="size-42">42</label>
+      </div>
+    </fieldset>
+
+    <label for="color">Color:</label>
+    <select id="color"><option>Default</option></select>
+
+    <button id="add-to-bag-btn" class="add-to-bag-button" style="margin-top: 20px;">
+      Add to Bag
+    </button>
+
+    <a href="index.html" class="back-link" style="display: inline-block; margin-top: 15px; color: white; text-decoration: underline;">
+      ← Back to Home
+    </a>
+  </div>
+
+  <!-- Load product data from external file -->
+  <script src="productsData.js"></script>
+  <script src="sale.js"></script>
+
+</body>
+</html>

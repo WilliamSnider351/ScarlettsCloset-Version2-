@@ -1,0 +1,120 @@
+html, body {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Playfair Display', serif;
+      color: white; background-color: black;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .text-panel {
+      flex: 1 1 40%;
+      background-color: rgba(0,0,0,0.8);
+      padding: 40px 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header {
+      font-size: 2rem;
+      margin-bottom: 4px; /* minimal space below title */
+      padding-left: 0;
+    }
+
+    .hero-title {
+      color: white;
+      text-decoration: none;
+    }
+
+    .confirmation-container {
+      margin-left: 1in;  /* shift right */
+      margin-top: 1.5in; /* push down */
+      max-width: 400px;
+    }
+
+    .confirmation-title {
+      color: orange;
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin: 0 0 8px 0; /* no top margin, small bottom */
+      line-height: 1.1;
+    }
+
+    .confirmation-details p {
+      font-size: 1.1rem;
+      line-height: 1.1rem; /* very tight line spacing */
+      margin: 0 0 4px 0; /* no top margin, very small bottom */
+      white-space: pre-line;
+    }
+
+    .back-link {
+      margin-top: 20px;
+      color: orange;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: left;
+      display: inline-block;
+      font-size: 1.1rem;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    .image-panel {
+      flex: 1 1 60%;
+      background: url('images/mannequin.png') no-repeat center center;
+      background-size: contain;
+      background-color: black;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .text-panel, .image-panel {
+        flex: none;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .confirmation-container {
+        margin-left: 0;
+        margin-top: 1.5em;
+        padding: 0 10px;
+      }
+
+      .confirmation-title {
+        font-size: 1.4rem;
+        margin-bottom: 6px;
+      }
+
+      .confirmation-details p {
+        font-size: 1rem;
+        line-height: 1.1rem;
+      }
+
+      .header {
+        font-size: 1.5rem;
+        margin-bottom: 4px;
+      }
+
+      .back-link {
+        margin-top: 15px;
+        font-size: 1rem;
+      }
+
+      .image-panel {
+        background-size: cover;
+        min-height: 300px;
+      }
+    }

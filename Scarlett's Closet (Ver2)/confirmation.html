@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Confirmation - Scarlett's Closet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="confirmation.css" />
+
+</head>
+<body>
+  <div class="container">
+    <div class="text-panel">
+      <div class="header">
+        <a href="index.html" class="hero-title">SCARLETT'S CLOSET</a>
+      </div>
+
+      <div class="confirmation-container">
+        <h2 class="confirmation-title">Order Confirmation</h2>
+
+        <div class="confirmation-details">
+          <p>Details<br>Order #<span id="order-number"></span><br>Arriving:<br><span id="arrival-date"></span><br>Ship to:<br><span id="ship-name"></span><br><span id="ship-citystate"></span><br>Order Total: $<span id="order-total">0.00</span></p>
+
+          <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-panel" aria-label="Mannequin image background"></div>
+  </div>
+
+  <script src="confirmation.js"></script>
+
+</body>
+</html>

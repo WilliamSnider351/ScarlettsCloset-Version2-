@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scarlett's Closet - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Playfair Display', serif;
+      color: black; /* Default text color */
+    }
+
+    /* Background */
+    body {
+      background-image: url('images/closet.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top-left Scarlett's Closet link */
+    .hero-title {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      font-size: 1.5rem;
+      color: black; /* Black text */
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      z-index: 10;
+    }
+
+    .hero-title:hover {
+      color: #444;
+    }
+
+    /* Main content container */
+    .content {
+      margin: auto;
+      max-width: 700px;
+      padding: 120px 20px 80px;
+      background: transparent;
+    }
+
+    .content h1 {
+      margin-bottom: 48px;
+      font-size: 3rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: black;
+      text-align: left;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: white; /* Footer tagline stays white */
+      font-size: 0.9rem;
+      padding: 20px 0;
+      margin-top: auto;
+      background: transparent;
+    }
+
+    /* Responsive font size tweak */
+    @media (max-width: 600px) {
+      .content h1 {
+        font-size: 2rem;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+
+      .hero-title {
+        font-size: 1.2rem;
+        top: 8px;
+        left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="hero-title">Scarlett’s Closet</a>
+
+  <div class="content">
+    <h1>Scarlett’s Closet</h1>
+    <p>We use a model focused approach in our sales. We only sell products worn by models, such as Scarlett Johansson and Kristen Stewart. Founded in 2025, we are now a fast-growing online fashion boutique.</p>
+    <p>Scarlett’s Closet focuses on classic styling and high fashion. We offer women’s clothing items that range from casual streetwear to dresses for the most formal of events.</p>
+    <p>Scarlett’s Closet offers women’s ready-to-wear, dresses, skirts, boots, shoes, and bags. These products are offered on our e-commerce sites and at boutiques in some of the world’s biggest cities.</p>
+    <p>Scarlett’s Closet is led by William Snider as CEO. Our design team is guided by Michael Vitale. Michael has been with us as Chief Creative Officer since May 5, 2025.</p>
+  </div>
+
+  <footer>
+    Faces you know, brands you trust.<br />
+    © 2025 Scarlett's Closet, Incorporated
+  </footer>
+</body>
+</html>
